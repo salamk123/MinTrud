@@ -1,0 +1,44 @@
+﻿@model LoginModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/Login.css"/>
+</head>
+<body>
+    <div>
+
+
+        <form class="sign-up" asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+            <h2 class="log__title">Авторизация</h2>
+
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="sign-up__setting">
+                <div class="sign-up__inner">
+                    <label class="form__lab" asp-for="Email">Введите Email</label>
+                    <input class="form__field textbox" type="text" asp-for="Email" readonly
+                           onfocus="this.removeAttribute('readonly')" />
+                    <span asp-validation-for="Email" />
+                </div>
+                <div class="sign-up__inner">
+                    <label class="form__lab" asp-for="Password">Введите пароль</label>
+                    <input class="form__field textbox"  asp-for="Password" readonly
+                           onfocus="this.removeAttribute('readonly')" />
+                    <span asp-validation-for="Password" />
+                </div>
+                <input class="sign-up__btn" type="submit" value="Войти" />
+                <div class="create__acc">У вас нет аккаунта? <a class="create__acc__link" asp-controller="Account" asp-action="Register"> зарегистрироваться</a></div>
+            </div>
+        </form>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script><!--подключение jquery-->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

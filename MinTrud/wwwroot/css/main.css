@@ -1,0 +1,856 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding-top: 1px;
+    background-color: #f1f6fb;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+}
+
+
+/*      header      */
+
+
+.header {
+    color: #fff;
+    background-color: #673ab7;
+}
+
+.header__setting {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__logo__img {
+    width: 95px;
+    height: 95px;
+}
+
+
+.header__logo__name {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__links__item {
+    font-size: 16px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+    .header__links__item:hover {
+        color: #edda34;
+    }
+
+
+.header__link__log {
+    font-size: 16px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 19px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+    .header__link__log:hover {
+        color: #edda34;
+        border-color: #edda34;
+    }
+
+
+.header__link__reg {
+    font-size: 16px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 19px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+    .header__link__reg:hover {
+        color: #edda34;
+        border-color: #edda34;
+    }
+
+
+.header__link__item:last-child {
+    margin-right: 0px;
+}
+
+
+/*      main        */
+
+
+.main {
+    margin-top: 70px;
+}
+
+
+/*      news        */
+
+
+.main__news {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+.main__news__name {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: left;
+}
+
+
+.main__news__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+
+.main__news__inner__item {
+    width: 450px;
+    height: 300px;
+    border-radius: 6px;
+    background-color: aqua;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    background-size: cover;
+    border: 1px solid #673ab7;
+}
+
+
+
+
+.main__news__inner__item__setting {
+    padding: 20px;
+}
+
+
+.main__news__inner__item__setting__txt {
+    font-weight: 600;
+    font-size: 18px;
+    color: #673ab7;
+    text-align: justify;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+    height: 160px;
+}
+
+.main__news__inner__item__setting__date {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #673ab7;
+}
+
+
+.main__news__inner__item__setting__info {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #673ab7;
+}
+
+
+/*      activity        */
+
+
+.main__activity__back {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.main__activity {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.main__activity__name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.main__activity__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.main__activity__inner__block {
+    width: 342.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: #f1f6fb;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    border: 1px solid #dae5ef;
+}
+
+
+.main__activity__inner__block__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main__activity__inner__block__name {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+
+.main__activity__inner__block__click {
+    margin-top: 12.5px;
+}
+
+
+
+/*      doc     */
+
+
+.main__doc {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+
+
+.main__doc__name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+
+.main__doc__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+
+.main__doc__inner__item {
+    padding: 30px;
+    width: 391px;
+    height: 248px;
+    background-color: #fff;
+    border: 1px solid #dae5ef;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+    .main__doc__inner__item:hover {
+        border-color: #673ab7;
+    }
+
+
+
+.main__doc__inner__item__top {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.main__doc__inner__item__top__img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+
+.main__doc__inner__item__top__date {
+    font-size: 16px;
+    color: #6b708e;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.main__doc__inner__item__txt {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/*          все что касается sign-up            */
+
+
+.sign-up {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 1px;
+    border: 2px solid #a08afb;
+    border-radius: 50px;
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
+    background-color: #fff;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+    .sign-up:hover {
+        box-shadow: 0px 0px 10px 0px #a08afb;
+    }
+
+
+
+
+.sign-up__active {
+    display: block;
+}
+
+
+.sign-up__anime {
+    opacity: 1;
+    top: 100px;
+}
+
+
+.log__title {
+    text-align: center;
+    color: #a08afb;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+
+
+/*      validator       */
+
+
+
+
+
+.validator {
+}
+
+
+
+
+
+
+.sign-up__setting {
+    margin-top: 80px;
+}
+
+
+.sign-up__title {
+    text-align: center;
+    color: #a08afb;
+    width: 400px;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+.sign-up__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+
+.form__lab {
+    margin-bottom: 15px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    color: #a08afb;
+    transition: all 0.5s ease;
+}
+
+
+.form__lab__active {
+    top: -15px;
+    transition: all 0.5s ease;
+}
+
+
+.sign-up__inner:hover > .form__lab {
+    top: -15px;
+}
+
+
+
+.form__field {
+    width: 400px;
+    margin: 0 auto;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #a08afb;
+    outline: 0;
+    color: #a08afb;
+    background: #fff;
+}
+
+
+
+    .form__field:active {
+        border: none;
+    }
+
+
+
+.sign-up__btn {
+    padding: 14px 80px;
+    background-color: #a08afb;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    border: 2px solid #a08afb;
+    border-radius: 30px;
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+
+    .sign-up__btn:hover {
+        background-color: #fff;
+        color: #a08afb;
+    }
+
+
+
+.create__acc {
+    color: #000;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+
+
+    .create__acc:hover {
+    }
+
+
+.create__acc__link {
+    display: inline-block;
+    color: #a08afb;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 9px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+    .create__acc__link:hover {
+        font-size: 16px;
+    }
+
+
+
+.create__acc__soc {
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+
+
+.soc-net {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.soc-net__icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/*          reg       */
+
+/* все что касается reg */
+
+
+.force {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+.force__active {
+    opacity: 0.5;
+    display: block;
+}
+
+
+.reg {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 1px;
+    border: 2px solid #a08afb;
+    border-radius: 50px;
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
+    transition: all 0.5s ease;
+    margin-bottom: 40px;
+    background-color: #fff;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+
+.reg__active {
+    display: block;
+}
+
+
+.reg__anime {
+    opacity: 1;
+    top: 100px;
+}
+
+
+
+.reg:hover {
+    box-shadow: 0px 0px 10px 0px #a08afb;
+}
+
+
+
+.reg__title {
+    text-align: center;
+    color: #a08afb;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+
+
+.reg__setting {
+    margin-top: 40px;
+}
+
+
+
+
+.reg__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+
+/* это лабел */
+
+
+
+.form__lab {
+    margin-bottom: 15px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    color: #a08afb;
+    transition: all 0.5s ease;
+}
+
+
+.reg__inner:hover > .form__lab {
+    top: -15px;
+    transition: all 0.5s ease;
+}
+
+
+
+.form__lab__active {
+    top: -15px;
+}
+
+
+
+/* это инпут  */
+
+
+
+.form__field {
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #a08afb;
+    outline: 0;
+    color: #a08afb;
+    background: #fff;
+}
+
+
+
+    .form__field:active {
+        border: none;
+    }
+
+
+
+/* кнопка регистрации */
+
+
+
+.reg__btn {
+    width: 200px;
+    padding: 14px 15px;
+    background-color: #a08afb;
+    color: #fff;
+    border: 2px solid #a08afb;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+
+    .reg__btn:hover {
+        color: #a08afb;
+        background-color: #fff;
+    }
+
+
+
+
+/*      footer      */
+
+
+
+.footer {
+    background-color: #673ab7;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer__inner__left {
+}
+
+
+.footer__inner__left__img {
+    margin-bottom: 10px;
+}
+
+
+
+.footer__inner__left__name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.footer__inner__midle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer__inner__midle__name {
+    font-size: 22px;
+}
+
+
+.footer__inner__midle__number {
+    font-size: 16px;
+}
+
+
+.footer__inner__midle__mail {
+    font-size: 16px;
+}
+
+
+
+.footer__inner__midle__time {
+    font-size: 16px;
+}
+
+
+
+.footer__inner__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer__inner__right__name {
+    font-size: 22px;
+}
+
+
+.footer__inner__rigth__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__inner__midle__vk {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer__inner__midle__teleg {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__inner__midle__odnoklas {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.footer__inner__right__adress {
+    font-size: 16px;
+    width: 200px;
+}

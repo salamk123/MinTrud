@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Mvc.ModelBinding
+@model RegisterModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/Register.css" />
+</head>
+<body>
+    
+
+        <form class="reg" asp-action="Register" asp-controller="Account" asp-antiforgery="true">
+            <div asp-validation-summary="ModelOnly"></div>
+            <h2 class="reg__title">Регистрация</h2>
+            <div class="reg__setting">
+                <div class="reg__inner textbox" data-index="0">
+
+                    <label class="form__lab" asp-for="LastName">Фамилия</label><br />
+                    <input class="form__field" type="text" asp-for="LastName" />
+                    <span asp-validation-for="LastName" />
+                </div>
+                <div class="reg__inner textbox" data-index="1">
+                    <label class="form__lab" asp-for="Name">Имя</label><br />
+                    <input class="form__field" type="text" asp-for="Name" />
+                    <span asp-validation-for="Name" />
+                </div>
+                <div class="reg__inner textbox" data-index="2">
+                    <label class="form__lab" asp-for="MiddleName">Отчество</label><br />
+                    <input class="form__field" type="text" asp-for="MiddleName" />
+                    <span asp-validation-for="MiddleName" />
+                </div>
+                <div class="reg__inner textbox" data-index="3">
+                    <label class="form__lab" asp-for="Email">Email</label><br />
+                    <input class="form__field" type="text" asp-for="Email" readonly
+                           onfocus="this.removeAttribute('readonly')" />
+                    <span asp-validation-for="Email" />
+                </div>
+                <div class="reg__inner textbox" data-index="4">
+                    <label class="form__lab" asp-for="Phone">Телефон</label><br />
+                    <input class="form__field" type="text" asp-for="Phone" readonly
+                           onfocus="this.removeAttribute('readonly')" />
+                    <span asp-validation-for="Phone" />
+                </div>
+                <div class="reg__inner textbox" data-index="5">
+                    <label class="form__lab" asp-for="Password">Пароль</label><br />
+                    <input class="form__field" asp-for="Password" readonly
+                           onfocus="this.removeAttribute('readonly')" />
+                    <span asp-validation-for="Password" />
+                </div>
+                <div class="reg__inner textbox" data-index="6">
+                    <label class="form__lab" asp-for="ConfirmPassword">Повторите пароль</label><br />
+                    <input class="form__field" asp-for="ConfirmPassword" />
+                    <span asp-validation-for="ConfirmPassword" />
+                </div>
+                <div>
+                    <input class="reg__btn" type="submit" value="Регистрация" />
+                </div>
+            </div>
+        </form>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script><!--подключение jquery-->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="~/" />
+	<title></title>
+</head>
+<body>
+	@if (User.Identity.IsAuthenticated)
+	{
+		<a asp-controller="Account" asp-action="PersonalCabinet">Пользователь авторизован</a>
+	}
+	else
+	{
+		<a asp-controller="Account" asp-action="Login">Пользователь неавторизован</a>
+	}
+
+	<a asp-controller="Main" asp-action="Index">Link</a>
+	<a asp-controller="Main" asp-action="NewPage" style="color:black;">new page</a>
+	<a href="~/files/1.pdf">pdf</a>
+	<a href="~/files/2.docx">docx</a>
+
+</body>
+</html>
