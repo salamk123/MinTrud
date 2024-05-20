@@ -1,0 +1,62 @@
+﻿.personal {
+    width: 1200px;
+    border: 1px solid #673ab7;
+    margin: 0 auto;
+    margin-top: 150px;
+    
+}
+
+
+
+.personal__inner{
+    display: flex;
+    padding: 20px;
+}
+
+
+.personal__inner__img{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+
+.personal__inner__post {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.personal__inner__post__info {
+    border: 1px solid #673ab7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    color: #673ab7;
+    
+}
+
+
+.personal__info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px
+}
+
+
+.personal__info__item {
+    border: 1px solid #673ab7;
+    padding: 15px;
+    color: #673ab7;
+    width: 45%;
+}
+
+    .personal__info__item:nth-child(1) {
+        margin-left: 10px;
+    }
+
+

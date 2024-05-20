@@ -9,14 +9,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="~/css/PersonalCabinet.css"/>
 	<title></title>
 </head>
 <body>
-	<div>@Model.LastName</div>
-	<div>@Model.Name</div>
-	<div>@Model.MiddleName</div>
-	<div>@Model.Email</div>
-	<div>@Model.Phone</div>
-	<div>@Model.Password</div>
+	<div class="personal">
+		<div class="personal__inner">
+			<img href="https://icons8.ru/icon/15261/name" class="personal__inner__img" />
+
+			<div class="personal__inner__post">
+				<div class="personal__inner__post__info">@Model.LastName</div>
+				<div class="personal__inner__post__info">@Model.Name</div>
+				<div class="personal__inner__post__info">@Model.MiddleName</div>
+			</div>
+		</div>
+		
+		<div class="personal__info">
+			<div class="personal__info__item">@Model.Email</div>
+			<div class="personal__info__item">@Model.Phone</div>
+		</div>
+	</div>
+
+	
 </body>
 </html>
