@@ -38,15 +38,15 @@
                     </defs>
                 </svg>
 
-                <div class="header__logo__name">Министерство труда и социального развития<br /> Республики Дагестан</div>
+                <a asp-controller="Main" asp-action="Main" style="color: #fff; text-decoration: none;" class="header__logo__name">Министерство труда и социального развития<br /> Республики Дагестан</a>
             </div>
 
             <div class="header__links">
                 <a asp-controller="Main" asp-action="Ministry" class="header__links__item">Министерство</a>
 
-                <div class="header__links__item">Деятельность</div>
+                <a asp-controller="Main" asp-action="Activity" class="header__links__item">Деятельность</a>
 
-                <div class="header__links__item">Документы</div>
+                <a class="header__links__item" asp-controller="Main" asp-action="Documents">Документы</a>
 
 
 
@@ -59,12 +59,14 @@
                 }
                 else
                 {
-                    
+
                     <div class="header__link__item">
+
                         <a class="header__link__log" asp-controller="Account" asp-action="Login">Войти</a>
                     </div>
 
                     <div class="header__link__item">
+
                         <a class="header__link__reg" asp-controller="Account" asp-action="Register">Зарегистрироваться</a>
                     </div>
                 }

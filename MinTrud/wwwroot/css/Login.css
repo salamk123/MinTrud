@@ -1,7 +1,15 @@
-﻿.sign-up {
+﻿body {
+    padding-top: 1px;
+    background-color: #f1f6fb;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+}
+
+.sign-up {
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    margin-top: 100px;
     padding-top: 1px;
     border: 2px solid #a08afb;
     border-radius: 50px;

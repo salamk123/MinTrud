@@ -22,5 +22,15 @@ namespace MinTrud.Controllers
         {
             return View();
         }
+
+        public IActionResult Documents()
+        {
+            return View();
+        }
+
+        public IActionResult Activity()
+        {
+            return View();
+        }
     }
 }

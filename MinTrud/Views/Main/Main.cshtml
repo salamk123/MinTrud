@@ -39,15 +39,15 @@
                     </defs>
                 </svg>
 
-                <div class="header__logo__name">Министерство труда и социального развития<br /> Республики Дагестан</div>
+                <a asp-controller="Main" asp-action="Main" style="color: #fff; text-decoration: none;" class="header__logo__name">Министерство труда и социального развития<br /> Республики Дагестан</a>
             </div>
 
             <div class="header__links">
                 <a asp-controller="Main" asp-action="Ministry" class="header__links__item">Министерство</a>
 
-                <div class="header__links__item">Деятельность</div>
+                <a asp-controller="Main" asp-action="Activity" class="header__links__item">Деятельность</a>
 
-                <div class="header__links__item">Документы</div>
+                <a class="header__links__item" asp-controller="Main" asp-action="Documents">Документы</a>
 
 
 
@@ -127,7 +127,7 @@
                 <div class="main__activity__name">Деятельность</div>
 
                 <div class="main__activity__inner">
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -145,14 +145,14 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Руководство</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
 
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -170,14 +170,14 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Подведомственные учреждения</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
 
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -195,14 +195,14 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Цели и задачи</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
 
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -220,14 +220,14 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Достижения отрасли</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
 
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -245,14 +245,14 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Структура</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
 
-                    <div class="main__activity__inner__block">
+                    <a asp-controller="Main" asp-action="Ministry" class="main__activity__inner__block">
                         <svg class="main__activity__inner__block__img" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path xmlns="http://www.w3.org/2000/svg" d="M10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5C8 7 7 8 7 10.5V13.5C7 16 8 17 10.5 17Z" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -270,12 +270,12 @@
                             <path xmlns="http://www.w3.org/2000/svg" d="M2 16H4" stroke="#673ab7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
 
-                        <div class="main__activity__inner__block__name">Социальная поддержка</div>
+                        <div class="main__activity__inner__block__name">Независимая оценка</div>
 
                         <svg class="main__activity__inner__block__click" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z" fill="#292D32"></path>
                         </svg>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@
             <div class="main__doc__name">Новые документы</div>
 
             <div class="main__doc__inner">
-                <div class="main__doc__inner__item">
+                <a href="~/files/1.pdf" class="main__doc__inner__item">
                     <div class="main__doc__inner__item__top">
                         <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.7997 2.21048C15.3897 1.80048 14.6797 2.08048 14.6797 2.65048V6.14048C14.6797 7.60048 15.9197 8.81048 17.4297 8.81048C18.3797 8.82048 19.6997 8.82048 20.8297 8.82048C21.3997 8.82048 21.6997 8.15048 21.2997 7.75048C19.8597 6.30048 17.2797 3.69048 15.7997 2.21048Z" fill="#673ab7"></path>
@@ -295,9 +295,9 @@
                     </div>
 
                     <div class="main__doc__inner__item__txt">Постановление Правительства Республики Дагестан от 06 марта 2024 года №44 "О внесении изменений в некоторые акты Правительства РД" (в соответствии с постановл.Правительства РД от 08 февраля 2024 года № 16 "О мерах социальной поддержки больных фенилкетонурией")</div>
-                </div>
+                </a>
 
-                <div class="main__doc__inner__item">
+                <a href="~/files/2.pdf" class="main__doc__inner__item">
                     <div class="main__doc__inner__item__top">
                         <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.7997 2.21048C15.3897 1.80048 14.6797 2.08048 14.6797 2.65048V6.14048C14.6797 7.60048 15.9197 8.81048 17.4297 8.81048C18.3797 8.82048 19.6997 8.82048 20.8297 8.82048C21.3997 8.82048 21.6997 8.15048 21.2997 7.75048C19.8597 6.30048 17.2797 3.69048 15.7997 2.21048Z" fill="#673ab7"></path>
@@ -308,9 +308,9 @@
                     </div>
 
                     <div class="main__doc__inner__item__txt">Приказ Минтруда РД от 12 февраля 2024 года № 07/3-75 "О проведении военно- профориентационных мероприятий среди молодежи  "Военная профессия – достойный выбор!"</div>
-                </div>
+                </a>
 
-                <div class="main__doc__inner__item">
+                <a href="~/files/3.docx" class="main__doc__inner__item">
                     <div class="main__doc__inner__item__top">
                         <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path xmlns="http://www.w3.org/2000/svg" d="M15.7997 2.21048C15.3897 1.80048 14.6797 2.08048 14.6797 2.65048V6.14048C14.6797 7.60048 15.9197 8.81048 17.4297 8.81048C18.3797 8.82048 19.6997 8.82048 20.8297 8.82048C21.3997 8.82048 21.6997 8.15048 21.2997 7.75048C19.8597 6.30048 17.2797 3.69048 15.7997 2.21048Z" fill="#673ab7"></path>
@@ -321,7 +321,7 @@
                     </div>
 
                     <div class="main__doc__inner__item__txt">Приказ Минтруда РД от 08 февраля 2024 года № 07/3-67 "Об утвержд. Перечня приорит. профессий (специальностей) для професс. обучения и дополнит. професс. образов. безработных граждан, в том числе инвалидов молодого возраста, в 2024 году"</div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

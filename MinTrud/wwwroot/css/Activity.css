@@ -1,4 +1,5 @@
-﻿* {
+﻿
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,9 +8,10 @@
 
 body {
     padding-top: 1px;
-    background-color: #f1f6fb;
+    background-color: #fff;
     font-family: "Golos Text", sans-serif;
     font-style: normal;
+    
 }
 
 
@@ -130,7 +132,7 @@ body {
 
 
 .main {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 
@@ -216,7 +218,7 @@ body {
 
 .main__activity__back {
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -318,13 +320,12 @@ body {
 .main__doc__inner__item {
     padding: 30px;
     width: 391px;
+    height: 248px;
     background-color: #fff;
     border: 1px solid #dae5ef;
     border-radius: 9px;
     transition: all 0.3s ease;
     cursor: pointer;
-    text-decoration: none;
-    
 }
 
 
@@ -362,401 +363,9 @@ body {
 .main__doc__inner__item__txt {
     font-size: 16px;
     font-weight: 600;
-    color: #000;
 }
 
 
-/*          все что касается sign-up            */
-
-
-.sign-up {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    padding-top: 1px;
-    border: 2px solid #a08afb;
-    border-radius: 50px;
-    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
-    background-color: #fff;
-    position: fixed;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-    .sign-up:hover {
-        box-shadow: 0px 0px 10px 0px #a08afb;
-    }
-
-
-
-
-.sign-up__active {
-    display: block;
-}
-
-
-.sign-up__anime {
-    opacity: 1;
-    top: 100px;
-}
-
-
-.log__title {
-    text-align: center;
-    color: #a08afb;
-    width: 400px;
-    max-width: 100%;
-    padding: 20px 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-radius: 50px;
-}
-
-
-
-/*      validator       */
-
-
-
-
-
-.validator {
-}
-
-
-
-
-
-
-.sign-up__setting {
-    margin-top: 80px;
-}
-
-
-.sign-up__title {
-    text-align: center;
-    color: #a08afb;
-    width: 400px;
-    padding: 20px 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-radius: 50px;
-}
-
-
-
-
-.sign-up__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-
-
-.form__lab {
-    margin-bottom: 15px;
-    position: absolute;
-    left: 50px;
-    top: 10px;
-    color: #a08afb;
-    transition: all 0.5s ease;
-}
-
-
-.form__lab__active {
-    top: -15px;
-    transition: all 0.5s ease;
-}
-
-
-.sign-up__inner:hover > .form__lab {
-    top: -15px;
-}
-
-
-
-.form__field {
-    width: 400px;
-    margin: 0 auto;
-    height: 40px;
-    border: none;
-    border-bottom: 2px solid #a08afb;
-    outline: 0;
-    color: #a08afb;
-    background: #fff;
-}
-
-
-
-    .form__field:active {
-        border: none;
-    }
-
-
-
-.sign-up__btn {
-    padding: 14px 80px;
-    background-color: #a08afb;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 80px;
-    border: 2px solid #a08afb;
-    border-radius: 30px;
-    font-size: 22px;
-    transition: all 0.5s ease;
-}
-
-
-    .sign-up__btn:hover {
-        background-color: #fff;
-        color: #a08afb;
-    }
-
-
-
-.create__acc {
-    color: #000;
-    font-weight: 500;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    transition: all 0.5s ease;
-}
-
-
-
-    .create__acc:hover {
-    }
-
-
-.create__acc__link {
-    display: inline-block;
-    color: #a08afb;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 9px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-
-    .create__acc__link:hover {
-        font-size: 16px;
-    }
-
-
-
-.create__acc__soc {
-    text-align: center;
-    color: #000;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-
-
-
-.soc-net {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-
-.soc-net__icon {
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 30px;
-    width: 30px;
-}
-
-
-
-/*          reg       */
-
-/* все что касается reg */
-
-
-.force {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: grey;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-
-.force__active {
-    opacity: 0.5;
-    display: block;
-}
-
-
-.reg {
-    width: 600px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 1px;
-    border: 2px solid #a08afb;
-    border-radius: 50px;
-    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
-    transition: all 0.5s ease;
-    margin-bottom: 40px;
-    background-color: #fff;
-    position: fixed;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-
-.reg__active {
-    display: block;
-}
-
-
-.reg__anime {
-    opacity: 1;
-    top: 100px;
-}
-
-
-
-.reg:hover {
-    box-shadow: 0px 0px 10px 0px #a08afb;
-}
-
-
-
-.reg__title {
-    text-align: center;
-    color: #a08afb;
-    width: 400px;
-    max-width: 100%;
-    padding: 20px 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-radius: 50px;
-}
-
-
-
-.reg__setting {
-    margin-top: 40px;
-}
-
-
-
-
-.reg__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-
-
-/* это лабел */
-
-
-
-.form__lab {
-    margin-bottom: 15px;
-    position: absolute;
-    left: 50px;
-    top: 10px;
-    color: #a08afb;
-    transition: all 0.5s ease;
-}
-
-
-.reg__inner:hover > .form__lab {
-    top: -15px;
-    transition: all 0.5s ease;
-}
-
-
-
-.form__lab__active {
-    top: -15px;
-}
-
-
-
-/* это инпут  */
-
-
-
-.form__field {
-    width: 500px;
-    max-width: 90%;
-    margin: 0 auto;
-    height: 40px;
-    border: none;
-    border-bottom: 2px solid #a08afb;
-    outline: 0;
-    color: #a08afb;
-    background: #fff;
-}
-
-
-
-    .form__field:active {
-        border: none;
-    }
-
-
-
-/* кнопка регистрации */
-
-
-
-.reg__btn {
-    width: 200px;
-    padding: 14px 15px;
-    background-color: #a08afb;
-    color: #fff;
-    border: 2px solid #a08afb;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    border-radius: 30px;
-    font-size: 22px;
-    transition: all 0.5s ease;
-}
-
-
-    .reg__btn:hover {
-        color: #a08afb;
-        background-color: #fff;
-    }
 
 
 
@@ -770,6 +379,9 @@ body {
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 

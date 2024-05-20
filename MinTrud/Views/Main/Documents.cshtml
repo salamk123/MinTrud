@@ -1,19 +1,17 @@
-﻿@model User;
-
-@{
-	Layout = null;
+﻿@{
+    Layout = null;
 }
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="~/css/PersonalCabinet.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/Documents.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-	<title></title>
+    <title></title>
 </head>
 <body>
     <header class="header">
@@ -76,22 +74,57 @@
         </div>
     </header>
 
-	<div class="personal">
-		<div class="personal__inner">
-			<img src="~/image/profile.png" class="personal__inner__img" />
+    <div class="main">
+        <div class="main__doc">
+            <div class="main__doc__item">
+                <img src="~/image/doc_icon.png" class="main__doc__item__img" />
 
-			<div class="personal__inner__post">
-				<div class="personal__inner__post__info">@Model.LastName</div>
-				<div class="personal__inner__post__info">@Model.Name</div>
-				<div class="personal__inner__post__info">@Model.MiddleName</div>
-			</div>
-		</div>
-		
-		<div class="personal__info">
-			<div class="personal__info__item">@Model.Email</div>
-			<div class="personal__info__item">@Model.Phone</div>
-		</div>
-	</div>
+                <div class="main__doc__item__inner">
+                    <div class="main__doc__item__inner__title">Проекты</div>
+
+                    <div class="main__doc__item__inner__txt">Проект приказа Минтруда РД «Об утверждении Административного регламента Минтруда РД по предостав.</div>
+                </div>
+
+                <a href="~/files/1.pdf" class="main__doc__item__btn">Скачать</a>
+            </div>
+
+            <div class="main__doc__item">
+                <img src="~/image/doc_icon.png" class="main__doc__item__img" />
+
+                <div class="main__doc__item__inner">
+                    <div class="main__doc__item__inner__title">Проекты</div>
+
+                    <div class="main__doc__item__inner__txt">Проект приказа Минтруда РД «Об утверждении Административного регламента Минтруда РД по предостав.</div>
+                </div>
+
+                <a href="~/files/2.pdf" class="main__doc__item__btn">Скачать</a>
+            </div>
+
+            <div class="main__doc__item">
+                <img src="~/image/doc_icon.png" class="main__doc__item__img" />
+
+                <div class="main__doc__item__inner">
+                    <div class="main__doc__item__inner__title">Проекты</div>
+
+                    <div class="main__doc__item__inner__txt">Проект приказа Минтруда РД «Об утверждении Административного регламента Минтруда РД по предостав.</div>
+                </div>
+
+                <a href="~/files/3.docx" class="main__doc__item__btn">Скачать</a>
+            </div>
+
+            <div class="main__doc__item">
+                <img src="~/image/doc_icon.png" class="main__doc__item__img" />
+
+                <div class="main__doc__item__inner">
+                    <div class="main__doc__item__inner__title">Проекты</div>
+
+                    <div class="main__doc__item__inner__txt">Проект приказа Минтруда РД «Об утверждении Административного регламента Минтруда РД по предостав.</div>
+                </div>
+
+                <a href="~/files/4.docx" class="main__doc__item__btn">Скачать</a>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer__inner">
@@ -147,3 +180,4 @@
     </footer>
 </body>
 </html>
+
